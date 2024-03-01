@@ -50,7 +50,7 @@ module.exports = {
       }
     ],
     "base-bold" : [
-      "1ppx",
+      "18px",
       {
         lineHeight: "140%",
         fontWeight: "600"

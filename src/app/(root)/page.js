@@ -1,11 +1,11 @@
 
-
-const Home = () => {
-    return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
-    );
-};
-
-export default Home;
+import { UserButton } from "@clerk/nextjs";
+ 
+export default function Home() {
+  return (
+    <div className="h-screen">
+        <p>Home</p>
+      <UserButton />
+    </div>
+  )
+}
