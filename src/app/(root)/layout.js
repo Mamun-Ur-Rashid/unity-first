@@ -18,16 +18,16 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang="en">
         <body className={`${inter.className} bg-red-300 `}>
-          <main className='grid grid-cols-12 gap-2'>
-            <div className='col-span-3'>
+          <main className='md:grid grid-cols-12 gap-2'>
+            <div className='md:col-span-3'>
               <SideBar />
             </div>
-            <div className='col-span-6'>
+            <div className='md:col-span-6'>
               <MainContent > 
                 {children}
                 </MainContent>
             </div>
-            <div className='col-span-3'>
+            <div className='md:col-span-3'>
               <RightBar></RightBar>
             </div>
           </main>
