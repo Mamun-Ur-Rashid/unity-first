@@ -3,7 +3,6 @@ import { Inter } from "next/font/google"
 import "../globals.css"
 import RightBar from "@components/layout/RightBar"
 import MainContent from "@components/layout/MainContent"
-import Topbar from "@components/layout/Topbar"
 import SideBar from "@components/layout/SideBar"
 import Footer from "@components/layout/Footer"
 
@@ -25,7 +24,6 @@ export default function RootLayout({ children }) {
             </div>
             <div className='col-span-6'>
               <MainContent > 
-                <Topbar />
                 {children}
                 </MainContent>
             </div>

@@ -1,10 +1,11 @@
 import React from 'react';
+import Topbar from './Topbar';
 
-const MainContent = () => {
+const MainContent = ({children}) => {
     return (
-        <div>
-            <h1>Main content</h1>
-        </div>
+        <section className='flex flex-col flex-1 max-w-3xl md:px-10 lg:px-4 xl:px-20'>
+            <Topbar></Topbar>
+        </section>
     );
 };
 
