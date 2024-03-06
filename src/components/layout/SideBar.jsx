@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '@../public/assert/unity.logo.png'
 import Menu from './Menu';
-// import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
+import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 import { Logout } from '@mui/icons-material';
 
 const SideBar = () => {
@@ -54,18 +54,18 @@ const SideBar = () => {
 
             <hr />
             <div className='flex gap-4 items-center my-4'>
-                {/* <UserButton /> */}
+                <UserButton />
                 <p className='text-body-bold'>Manage Account</p>
             </div>
 
-            {/* <SignedIn> */}
-                
+            <SignedIn>
+                <SignOutButton>
                     <div className='flex cursor-pointer text-center'>
                         <Logout sx={{ color: "white", fontSize: "32px" }} />
                         <p className='text-body-bold'>Log Out</p>
                     </div>
-                
-            {/* </SignedIn> */}
+                </SignOutButton>
+            </SignedIn>
         </div>
     );
 };
